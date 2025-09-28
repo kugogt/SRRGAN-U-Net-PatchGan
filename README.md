@@ -65,12 +65,13 @@ As seen in the results below, the U-Net (Perceptual) model achieves the best LPI
 
 📊 Final Evaluation Results
 
-| Metric             | U-Net (MAE      | U-Net (Perceptual)   | SRRGAN   |
-|--------------------------------------|----------------------|----------|
-| **PSNR**           | 25.6824         | 25.6589              | 25.7404  | 
-| **SSIM**           | 0.7146          | 0.7133               | 0.7165   | 
-| **MAE (Pixel)**    | 0.0753          | 0.0767               | 0.0759   | 
-| **LPIPS**          | 0.3716          | 0.3614               | 0.3689   |
+| Metric          | U-Net (MAE) | U-Net (Perceptual) | SRGAN   |
+|-----------------|------------|--------------------|---------|
+| **PSNR**        | 25.6824     | 25.6589            | 25.7404 |
+| **SSIM**        | 0.7146      | 0.7133             | 0.7165  |
+| **MAE (Pixel)** | 0.0753      | 0.0767             | 0.0759  |
+| **LPIPS**       | 0.3716      | 0.3614             | 0.3689  |
+
 
 ---
 
