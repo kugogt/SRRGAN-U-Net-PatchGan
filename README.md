@@ -5,7 +5,7 @@ Ciao! 👋 Welcome to this personal Computer Vision project, an evolution of [my
 Training was done on the DFK2K dataset and the test evaluation on BSDS100 dataset.
 
 **Please note**:The Jupyter Notebook in this repository (srrgan-u-net-patchgan.ipynb) is provided without cell outputs to keep the repository lightweight and git-friendly.
- - 🔗 For a complete, fully rendered version with all outputs and visualizations, [please view the project on Kaggle](https://www.kaggle.com/code/marcorosato/srrgan-u-net-patchgan)
+- 🔗 For a complete, fully rendered version with all outputs and visualizations, [please view the project on Kaggle](https://www.kaggle.com/code/marcorosato/srrgan-u-net-patchgan)
 - 🖼️ The visualization of the results can be still found here!
 
 ---
@@ -14,18 +14,18 @@ Training was done on the DFK2K dataset and the test evaluation on BSDS100 datase
 
 This project was engineered with several key features:
 
-- **Generative Adversarial Network (GAN)**: A U-Net generator is paired with a PatchGAN discriminator, which evaluates image realism on overlapping patches. This encourages the generator to produce fine-grained, authentic textures.
-- **"Blind" Degradation Pipeline**: To train a model for real-world scenarios, a degradation function was designed. It applies stochastic (randomized) degradations during training and deterministic (fixed) degradations during validation, creating a "blind restoration" task.
-- **U-Net Generator**: The generator's architecture is augmented with Squeeze-and-Excitation (SE) and Spatial Attention blocks, PixelShuffle upsampling, and Global Residual Learning.
-- **Three-Stage Training**: To manage the instability associated with GANs, a three-phase training strategy was employed. This ensures the generator reaches a strong starting point before engaging in adversarial training.
-- **Perceptual-Driven Model Selection**: Recognizing that metrics like PSNR do not always align with human vision, the best-performing generator was selected by evaluating all saved checkpoints with the LPIPS (Learned Perceptual Image Patch Similarity) metric.
+- **Generative Adversarial Network (GAN)**: A **U-Net generator** is paired with a **PatchGAN discriminator**, which evaluates image realism on overlapping patches. This encourages the generator to produce fine-grained, authentic textures.
+- **"Blind" Degradation Pipeline**: To train a model for real-world scenarios, a degradation function was designed. It applies **stochastic (randomized)** degradations during training and **deterministic (fixed)** degradations during validation, creating a "blind restoration" task.
+- **U-Net Generator**: The generator's architecture is augmented with **Squeeze-and-Excitation (SE)** and **Spatial Attention blocks**, **PixelShuffle upsampling** and **Global Residual Learning**.
+- **Three-Stage Training**: To manage the instability associated with GANs, a **three-phase training strategy** was employed. This ensures the generator reaches a strong starting point before engaging in adversarial training.
+- **Perceptual-Driven Model Selection**: Recognizing that metrics like PSNR do not always align with human vision, the best-performing generator was selected by evaluating all saved checkpoints with the **LPIPS** (Learned Perceptual Image Patch Similarity) metric.
 - **Seamless Tiled Inference**: An inference pipeline was developed to handle images of any size. It uses overlapping patches and Hann window blending to produce a seamless output.
 
 ---
 
 ## 📦 The Degradation Model
 
-A key component of this project is the pipeline used to create low-resolution (LR) images from their high-resolution (HR) counterparts. This process is intentionally different for training and evaluation.
+A key component of this project is the pipeline used to create **low-resolution (LR)** images from their **high-resolution (HR)** counterparts. This process is intentionally different for training and evaluation.
 
 - **For Training (Stochastic)**:  The model is exposed to a wide variety of artifacts by randomizing the degradation parameters and order. This includes:
   - **Blur**: Random choice between Gaussian and Box blur.
