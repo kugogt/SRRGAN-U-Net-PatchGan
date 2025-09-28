@@ -1,8 +1,10 @@
 # 🧠 SRRGAN: Super-Resolution and Restoration with a U-Net Generator and PatchGAN Discriminator
 
-Ciao! 👋 Welcome to this personal Computer Vision project, an evolution of [my previous work on image super-resolution]([https://example.com](https://github.com/kugogt/SR-Restoration-images-U-Net/tree/main)). This work implements a complete image-to-image pipeline, where a U-Net-based generator is trained adversarially against a PatchGAN discriminator. The primary goal is to move beyond the limitations of traditional pixel-wise losses (like MAE) and generate images that are not only accurate but also perceptually sharp and realistic.
+Ciao! 👋 Welcome to this personal Computer Vision project, an evolution of [my previous work on image super-resolution](https://github.com/kugogt/SR-Restoration-images-U-Net/tree/main). This work implements a complete image-to-image pipeline, where a U-Net-based generator is trained adversarially against a PatchGAN discriminator. The primary goal is to move beyond the limitations of traditional pixel-wise losses (like MAE) and generate images that are not only accurate but also perceptually sharp and realistic.
 
 Training was done on the DK2K dataset and the test evaluation on BSDS100 dataset.
+
+In this repository you will find ONLY the IPYNB file without the In-Line output due to limit space size. If you want to have a complete overview of this project, please, [follow this Kaggle link](https://www.kaggle.com/code/marcorosato/srrgan-u-net-patchgan)
 
 ---
 
