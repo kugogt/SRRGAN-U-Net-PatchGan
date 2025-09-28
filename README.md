@@ -85,9 +85,15 @@ As seen in the results below, the U-Net (Perceptual) model achieves the best LPI
 ### Patch Comparison:
 <img width="15546" height="31341" alt="model_comparison_patch" src="https://github.com/user-attachments/assets/f54b041d-da7a-4e5c-b677-cf6f9ccfefbf" />
 
-### Gan vs Bilinear upsample
+### Full image: MAe vs Perceptual vs SRRGAN
+<img width="7551" height="2866" alt="completo primo due" src="https://github.com/user-attachments/assets/c2c3414a-ac47-46c0-bb59-025386adad76" />
+<img width="7551" height="1585" alt="completo primo tre" src="https://github.com/user-attachments/assets/9fe7483d-e837-41fd-957b-d8df49f08e17" />
+<img width="7551" height="2811" alt="completo due" src="https://github.com/user-attachments/assets/81e654b0-06ee-495a-beb4-5222797eafc4" />
+<img width="7551" height="4571" alt="completo 3" src="https://github.com/user-attachments/assets/6c9b2ce9-846d-4511-af07-4b5459a6f431" />
+<img width="7551" height="2750" alt="completo quattro" src="https://github.com/user-attachments/assets/27575293-a47c-4f3e-a2b4-8dbfb2aa373e" />
+
+### Full image: Gan vs Bilinear upsample
 <img width="6018" height="7062" alt="prima metà" src="https://github.com/user-attachments/assets/7f3cc4e4-163c-4556-8187-696427cb34c3" />
 <img width="6018" height="4408" alt="seconda metà" src="https://github.com/user-attachments/assets/365d7fa4-57b4-43fa-ad44-b5caac955888" />
 <img width="6009" height="2733" alt="terza metà" src="https://github.com/user-attachments/assets/075a07ce-d1de-4bad-9de8-e4d27346e77f" />
-
 
