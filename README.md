@@ -2,11 +2,11 @@
 
 Ciao! 👋 Welcome to this personal Computer Vision project, an evolution of [my previous work on image super-resolution](https://github.com/kugogt/SR-Restoration-images-U-Net/tree/main). This work implements a complete image-to-image pipeline, where a U-Net-based generator is trained adversarially against a PatchGAN discriminator. The primary goal is to move beyond the limitations of traditional pixel-wise losses (like MAE) and generate images that are not only accurate but also perceptually sharp and realistic.
 
-Training was done on the DFK2K dataset and the test evaluation on BSDS100 dataset.
+Training was done on the **DFK2K** dataset and the test evaluation on **BSDS100** dataset.
 
-**Please note**:The Jupyter Notebook in this repository (srrgan-u-net-patchgan.ipynb) is provided without cell outputs to keep the repository lightweight and git-friendly.
+**Please note**:The Jupyter Notebook in this repository (*srrgan-u-net-patchgan.ipynb*) is provided without cell outputs to keep the repository lightweight and git-friendly.
 - 🔗 For a complete, fully rendered version with all outputs and visualizations, [please view the project on Kaggle](https://www.kaggle.com/code/marcorosato/srrgan-u-net-patchgan)
-- 🖼️ The visualization of the results can be still found at the bottom here!
+- 🖼️ The visualization of the results can be still found here at the bottom!
 
 ---
 
@@ -67,10 +67,10 @@ As seen in the results below, the U-Net (Perceptual) model achieves the best LPI
 
 | Metric          | U-Net (MAE) | U-Net (Perceptual) | SRGAN   |
 |-----------------|------------|--------------------|---------|
-| **PSNR**        | 25.6824     | 25.6589            | 25.7404 |
-| **SSIM**        | 0.7146      | 0.7133             | 0.7165  |
-| **MAE (Pixel)** | 0.0753      | 0.0767             | 0.0759  |
-| **LPIPS**       | 0.3716      | 0.3614             | 0.3689  |
+| **PSNR**        | 25.6824     | 25.6589            | **25.7404** |
+| **SSIM**        | 0.7146      | 0.7133             | **0.7165**  |
+| **MAE (Pixel)** | **0.0753**      | 0.0767             | 0.0759  |
+| **LPIPS**       | 0.3716      | **0.3614**             | 0.3689  |
 
 
 ---
