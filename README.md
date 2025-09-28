@@ -75,12 +75,17 @@ As seen in the results below, the U-Net (Perceptual) model achieves the best LPI
 
 ---
 
-## 📷 Visual Results: Patch-Level detail
+## 📷 Visual Results: 
 
+### Gan Training:
+![fiore](https://github.com/user-attachments/assets/dd69c346-6683-43f2-a8f2-a0af33692f66)
+![pietra](https://github.com/user-attachments/assets/ecf12d69-6076-4b45-a398-ae605315bcb9)
+![ghiaccio](https://github.com/user-attachments/assets/d674caf9-39f8-43c5-a9eb-3bfae50559a2)
 
+### Patch Comparison:
+<img width="15546" height="31341" alt="model_comparison_patch" src="https://github.com/user-attachments/assets/f54b041d-da7a-4e5c-b677-cf6f9ccfefbf" />
 
-
-
+### Gan vs Bilinear upsample
 
 
 
