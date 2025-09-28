@@ -6,7 +6,7 @@ Training was done on the DFK2K dataset and the test evaluation on BSDS100 datase
 
 **Please note**:The Jupyter Notebook in this repository (srrgan-u-net-patchgan.ipynb) is provided without cell outputs to keep the repository lightweight and git-friendly.
 - 🔗 For a complete, fully rendered version with all outputs and visualizations, [please view the project on Kaggle](https://www.kaggle.com/code/marcorosato/srrgan-u-net-patchgan)
-- 🖼️ The visualization of the results can be still found here!
+- 🖼️ The visualization of the results can be still found at the bottom here!
 
 ---
 
