@@ -1,6 +1,6 @@
 # 🧠 SRRGAN: Super-Resolution and Restoration with a U-Net Generator and PatchGAN Discriminator
 
-Ciao! 👋 Welcome to this personal Computer Vision project, an evolution of [my previous work on image super-resolution](https://github.com/kugogt/SR-Restoration-images-U-Net/tree/main). This work implements a complete image-to-image pipeline, where a U-Net-based generator is trained adversarially against a PatchGAN discriminator. The primary goal is to move beyond the limitations of traditional pixel-wise losses (like MAE) and generate images that are not only accurate but also perceptually sharp and realistic.
+Ciao! Welcome to this personal Computer Vision project, an evolution of [my previous work on image super-resolution](https://github.com/kugogt/SR-Restoration-images-U-Net/tree/main). This work implements a complete image-to-image pipeline, where a U-Net-based generator is trained adversarially against a PatchGAN discriminator. The primary goal is to move beyond the limitations of traditional pixel-wise losses (like MAE) and generate images that are not only accurate but also perceptually sharp and realistic.
 
 Training was done on the **DFK2K** dataset and the test evaluation on **BSDS100** dataset.
 
@@ -10,7 +10,7 @@ Training was done on the **DFK2K** dataset and the test evaluation on **BSDS100*
 
 ---
 
-## 🧩 Project Highlights
+## Project Highlights
 
 This project was engineered with several key features:
 
@@ -23,7 +23,7 @@ This project was engineered with several key features:
 
 ---
 
-## 📦 The Degradation Model
+## The Degradation Model
 
 A key component of this project is the pipeline used to create **low-resolution (LR)** images from their **high-resolution (HR)** counterparts. This process is intentionally different for training and evaluation.
 
@@ -35,7 +35,7 @@ A key component of this project is the pipeline used to create **low-resolution 
 
 ---
 
-## ⚙️ Model Architectures
+## Model Architectures
 
 1. **The Generator (U-Net)**
    The generator uses a U-Net architecture, leveraging its encoder-decoder structure and skip connections to preserve   spatial information across scales. The core of the network is enhanced with a deep stack of residual blocks and attention mechanisms to refine features and focus on critical image details.
@@ -44,7 +44,7 @@ A key component of this project is the pipeline used to create **low-resolution 
 
 ---
 
-## 📉 Training Methodology
+## Training Methodology
 
 A structured, three-phase training approach was used to ensure stability and convergence:
 
@@ -54,7 +54,7 @@ A structured, three-phase training approach was used to ensure stability and con
 
 ---
 
-## 🔬 Results & Final Comparison
+## Results & Final Comparison
 
 The SRRGAN model, selected based on the best LPIPS score across all training checkpoints, demostrated the "Perception-Distortion Trade-off":
 
@@ -63,7 +63,7 @@ This trade-off describes the inverse relationship between pixel-level accuracy a
 - **Perceptual metrics (like LPIPS)** reward models for creating realistic textures and sharp details, even if those details aren't a perfect pixel-for-pixel match.
 As seen in the results below, the U-Net (Perceptual) model achieves the best LPIPS score because it was directly optimized for this. However, the SRRGAN finds a better balance. Its adversarial training generates sharper details that result in the highest PSNR and SSIM scores, while maintaining a better perceptual quality than the Mae training producing images that are both accurate and realistic.
 
-📊 Final Evaluation Results
+### Final Evaluation Results
 
 | Metric          | U-Net (MAE) | U-Net (Perceptual) | SRGAN   |
 |-----------------|------------|--------------------|---------|
@@ -75,7 +75,7 @@ As seen in the results below, the U-Net (Perceptual) model achieves the best LPI
 
 ---
 
-## 📷 Visual Results: 
+##  Visual Results: 
 
 ### Gan Training:
 ![fiore](https://github.com/user-attachments/assets/dd69c346-6683-43f2-a8f2-a0af33692f66)
